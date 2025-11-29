@@ -3,6 +3,7 @@
 @import 'swiper/css/navigation';
 @import 'swiper/css/pagination';
 @import 'swiper/css/scrollbar';
+@import 'swiper/css/autoplay';
 
 :root {
   --background: #ffffff;
@@ -32,3 +33,36 @@ body {
   color: var(--first-color);
 }
  
+html[dir="rtl"] .swiper {
+  direction: rtl;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* برای حذف اسکرول افقی */
+}
+
+.swiper {
+  direction: rtl !important;
+}
+
+
+/* دایره‌های pagination */
+.swiper-pagination {
+  bottom: 20px !important;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border: 2px solid white;
+  background: transparent;
+  opacity: 1;
+  margin: 0 6px !important;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background: white;
+  transform: scale(1.2);
+}

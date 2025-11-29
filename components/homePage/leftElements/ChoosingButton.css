@@ -1,16 +1,40 @@
-.tab::before {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-width: 0 10px 10px 10px;
-    border-style: solid;
-    border-color: transparent transparent red transparent;
-    opacity: 0;
-    transition: opacity 0.3s;
+.tab {
+  background: transparent;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
 }
 
+/* مثلث پنهان پیش‌فرض */
+.tab::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 0 10px 10px 10px;
+  border-style: solid;
+  border-color: transparent transparent transparent transparent;
+  opacity: 0;
+  transition: opacity 0.3s, border-color 0.3s;
+}
+
+/* حالت هاور */
+.tab:hover {
+  background: #EE4466;
+  color: #fff;
+}
 .tab:hover::before {
-    opacity: 1;
+  opacity: 1;
+  border-color: transparent transparent #EE4466 transparent;
+}
+
+/* حالت فعال (کلیک‌شده) */
+.tab.active {
+  background: #EE4466;
+  color: #fff;
+}
+.tab.active::before {
+  opacity: 1;
+  border-color: transparent transparent #EE4466 transparent;
 }

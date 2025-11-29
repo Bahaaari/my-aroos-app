@@ -6,8 +6,8 @@ import weddingDress from '../../../public/images/homepage/weddingDress.png'
 
 const ServiceCategories = () => {
   return (
-    <div className='shadow-sm mb-2'>
-        <div className='bg-gray-200 w-250 h-12 font-semibold text-xs flex items-center justify-start ps-4'>
+    <div className='w-full shadow-sm mb-2 bg-white'>
+        <div className='bg-gray-200 w-full h-12 font-semibold text-xs flex items-center justify-start ps-4'>
          <span >
             دسته بندی خدمات
          </span>

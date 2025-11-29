@@ -4,7 +4,7 @@ import TopBar from './Topbar';
 
 const HeaderComponent = () => {
   return (
-    <div className='px-8 pt-8 pb-1 '>
+    <div className='pt-8 mb-2 '>
     <TopBar />
     <Navbar />
     </ div>

@@ -13,15 +13,15 @@ const HomepageRight = () => {
         <div className='mb-2 shadow-md'>
             <Link href='#'>
                   <Image src={watch3} height={150} width={220} 
-                  className='bg-[#D7DD8] rounded-t-sm' alt='watch' />
-                  <span className='block text-center text-white bg-amber-900 px-7 py-4'>20 درصد تخفیف انواع ساعت</span>
+                  className='bg-[#D7DD8] rounded-t-sm w-full' alt='watch' />
+                  <span className='text-center inline-block align-text-middle text-white text-sm bg-amber-900 w-full h-12'>20 درصد تخفیف انواع ساعت</span>
             </Link>
         </div>
         <div className='mb-2 shadow-md'>
             <Link href='#' >
                   <Image src={rings} height={150} width={220} 
                   className='bg-[#7da7b8] rounded-t-sm' alt='watch' />
-                  <span className='block text-center bg-white text-[#7da7b8] px-11.25 py-4'>حراج جواهرات زمردیان</span>
+                  <span className='block text-center text-sm bg-white text-[#7da7b8] px-8 py-4'>حراج جواهرات زمردیان</span>
             </Link>
         </div>
         <div className='mb-2 shadow-md'>

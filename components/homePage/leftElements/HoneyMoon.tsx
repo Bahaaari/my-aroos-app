@@ -1,12 +1,13 @@
 import React from 'react'
 import Image from 'next/image'
 import pool from '../../../public/images/homepage/pool.jpg'
-import ChoosingButton from './ChoosingButton'
+import Tabs from './Tabs'
+//import ChoosingButton from './ChoosingButton'
 
 const HoneyMoon = () => {
   return (
-    <div className='h-90 grid grid-rows-5 shadow-md mb-2'>
-        <div className='row-span-4 relative'>
+    <div className='h-86 w-full grid grid-rows-6 shadow-md mb-2 bg-white'>
+        <div className='row-span-5 relative'>
           <Image src={pool} alt='nature' 
           className='mask-l-from-40% mask-l-to-78%' />
         
@@ -30,9 +31,7 @@ const HoneyMoon = () => {
           </div>
         </div>
         <div className='row-span-1 flex justify-start items-center'>
-            <ChoosingButton title={'پکیج جهیزیه طرح1'} />
-            <ChoosingButton title={'هدیه ویژه عروس استور'} />
-            <ChoosingButton title={'حراج فروشگاه عروس استور'} />
+          <Tabs />
         </div>
     </div>
   )
