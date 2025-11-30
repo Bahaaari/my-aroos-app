@@ -7,7 +7,7 @@ import samandehi from '../../public/images/samandehi.png'
 
 const FooterNews = () => {
   return (
-    <div className='h-full  flex flex-col justify-start items-start'>
+    <div className='h-full flex flex-col justify-start items-start'>
       <div className='text-sm font-semibold mb-4'>
         عضویت در خبرنامه
       </div>
@@ -36,8 +36,8 @@ const FooterNews = () => {
         </Link>
       </div>
       <div className='flex'>
-        <Image src={samandehi} alt='Icon' height={120} width={120}/>
-        <Image src={eNamad} alt='Icon' height={120} width={120}/>
+        <Image src={samandehi} alt='Icon' height={60} width={80}/>
+        <Image src={eNamad} alt='Icon' height={60} width={80}/>
       </div>
     </div>
   )

@@ -2,7 +2,6 @@ import React from 'react'
 import Image, { StaticImageData } from 'next/image'
 import product1 from '../../public/images/products/product1.jpg'
 import circle from '../../public/images/products/circle.png'
-import track from "../../public/images/products/track.png"
 
 interface product {
     id: number;
@@ -37,8 +36,7 @@ const Products = () => {
             <Image src={circle} alt='inter' />
         </div>
         <div className='mx-32 flex'>
-            <Image src={track} alt='icon'/>
-            <span className='text-xl font-semibold'>محصولات</span>
+            <span className='text-xl font-semibold'>◀ محصولات</span>
         </div>
         <div className='flex items-center justify-center mb-12'>
             <table className='w-200'>
@@ -61,7 +59,7 @@ const Products = () => {
                             >
                                 <td className='px-8 py-2'>{row.id}</td>
                                 <td className='ps-8 py-2 w-20'>
-                                    <div className='w-20'>
+                                    <div className='w-20 inline-block border-1 border-gray-300 rounded-sm py-1 px-3 bg-white'>
                                         <Image src={row.img} alt='product' />
                                     </div>
                                 </td>

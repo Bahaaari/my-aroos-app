@@ -6,8 +6,8 @@ import FooterNews from './FooterNews'
 
 const FooterComponent = () => {
   return (
-    <div className='w-screen grid grid-rows-6 bg-gray-200 px-8 py-1'>
-        <div className='row-span-5 h-72 grid grid-cols-5 pt-8'>
+    <div className='w-full'>
+        <div className='w-full h-72 grid grid-cols-5 bg-gray-200 p-8'>
           <div className='flex col-span-1'>
             <FooterInformation />
           </div>
@@ -21,7 +21,7 @@ const FooterComponent = () => {
             <FooterNews />
           </div>
         </div>
-        <div className='row-span-1 bg-#gdge71'>
+        <div className='w-full h-12 text-sm text-white bg-[#6d6e71] flex items-center justify-center'>
           <span>
             کلیه حقوق مادی و معنوی سایت عروس استور متعلق به شرکت نوآوران سیستم می باشد (کپی رایت 2016)
           </span>

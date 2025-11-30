@@ -4,9 +4,11 @@ import HomepageLeft from './HomepageLeft'
 
 const Homepage = () => {
   return (
-    <div className='grid grid-cols-12 w-screen px-8 py-1'>
+    <div className='bg-gray-100 w-full'>
+      <div className='grid grid-cols-12 px-12 pb-1 mx-4'>
         <HomepageRight />
         <HomepageLeft />
+      </div>
     </div>
   )
 }

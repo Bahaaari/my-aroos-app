@@ -1,10 +1,10 @@
-import { title } from 'process'
 import React from 'react'
+import "./ChoosingButton.css"
 
-const ChoosingButton = ({title}:any) => {
+const ChoosingButton = ({ title }: any) => {
   return (
     <div>
-        <button className='text-sm p-4'>{title}</button>
+      <button className='text-sm p-4 relative tab'>{title}</button>
     </div>
   )
 }
