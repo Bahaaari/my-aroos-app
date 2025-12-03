@@ -83,35 +83,36 @@ const FavoritesList: React.FC = () => {
         data={visibleData}
         renderRow={row => (
           <>
-            <td className="px-4 py-6 text-center text-xs text-gray-700 align-top">{row.id}</td>
-            <td className="px-8 py-2">
-              <div className=" inline-block  rounded-sm">
-                <Image src={row.img} alt="salon" />
-              </div>
-            </td>
+            <div className='flex items-center'>
+              <td className="px-4 py-6 text-center text-xs text-gray-700 align-top">{row.id}</td>
+              <td className="px-8 py-2">
+                <div className=" inline-block  rounded-sm">
+                  <Image src={row.img} alt="salon" />
+                </div>
+              </td>
+            </div>
             <td className="px-4 py-4 text-xs align-top">
               <div className="flex items-start gap-4">
                 <div className="flex-1">
                   <div className="flex items-center justify-between">
                     <h3 className="font-semibold text-gray-800 text-xs">{row.title}</h3>
-                    
                   </div>
 
                   <p className="mt-2 text-xs text-gray-600 leading-relaxed ">{row.description}</p>
 
                   <div className="mt-3 flex flex-row items-center justify-start gap-4">
-                    <div className="flex flex-col items-center gap-2 ml-6">
+                    <div className="flex flex-col items-center ml-6">
                       <RatingStars /*rating={row.rating} size={16}*/ />
                       <span className="text-[10px] text-gray-500">{row.reviewsCount} نفر</span>
                     </div>
-                    <div className='flex'>
-                    <button className="cursor-pointer px-4 py-1 text-xs rounded-full border border-pink-500 text-pink-600 hover:bg-pink-50 transition">
-                      بازدید
-                    </button>
+                    <div className="flex gap-4 justify-end">
+                      <button className="cursor-pointer px-4 py-1 text-xs rounded-full border border-pink-500 text-pink-600 hover:bg-pink-50 transition">
+                        بازدید
+                      </button>
 
-                    <button className="cursor-pointer px-4 py-1 text-xs rounded-full text-pink-600 border border-pink-600 hover:bg-pink-50 transition">
-                      حذف از لیست
-                    </button>
+                      <button className="cursor-pointer px-4 py-1 text-xs rounded-full text-pink-600 border border-pink-600 hover:bg-pink-50 transition">
+                        حذف از لیست
+                      </button>
                     </div>
                   </div>
                 </div>

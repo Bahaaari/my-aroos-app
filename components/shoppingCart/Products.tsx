@@ -59,7 +59,7 @@ const Products = () => {
                             >
                                 <td className='px-8 py-2'>{row.id}</td>
                                 <td className='ps-8 py-2 w-20'>
-                                    <div className='w-20 inline-block border-1 border-gray-300 rounded-sm py-1 px-3 bg-white'>
+                                    <div className='w-20 inline-block border border-gray-300 rounded-sm py-1 px-3 bg-white'>
                                         <Image src={row.img} alt='product' />
                                     </div>
                                 </td>
