@@ -1,5 +1,7 @@
 import DataTable from '@/components/element/DataTable';
 import React from 'react';
+import Image from 'next/image';
+import circleButton  from '../../../public/images/products/circleButton.png'
 
 interface ShippingInfo {
   id: number;
@@ -50,7 +52,9 @@ const ShippingInfoTable = () => {
         data={data}
         renderRow={(row) => (
           <>
-            <td className="px-8 py-6 text-start text-[10px]">{row.id}</td>
+            <td className="px-8 py-6 text-start text-[10px]">
+              <Image src={circleButton} alt='choosing' />
+            </td>
             <td className="px-8 py-6 text-start text-[10px]">{row.name}</td>
             <td className="px-8 py-6 text-start text-[10px]">{row.city}</td>
             <td className="px-8 py-6 text-start text-[10px]">{row.address}</td>

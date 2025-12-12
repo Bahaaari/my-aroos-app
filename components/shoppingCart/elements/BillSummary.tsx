@@ -10,7 +10,7 @@ const BillSummary = () => {
   return (
     <div>
         <div className='flex items-center justify-center'>
-            <table className='w-200 border border-gray-300 text-sm font-semibold'>
+            <table className='w-186 border border-gray-300 text-xs font-semibold'>
               <tbody>
                 {dataSummary.map((row, index) => (
                     <tr
@@ -23,8 +23,8 @@ const BillSummary = () => {
                           : "bg-white"
                       }`}
                     >
-                        <td className='px-4 py-3'>{row.title}</td>
-                        <td className='px-4 py-3 text-left'>{row.value}</td>
+                        <td className='p-6'>{row.title}</td>
+                        <td className='p-6 text-left'>{row.value}</td>
                     </tr>
                 ))}
              </tbody>

@@ -1,25 +1,25 @@
-import React from 'react';
+
+
+
+import React from 'react'
 import ShoppingCartMenu from './ShoppingCartMenu';
 import BorderButton from '../element/BorderButton';
-import ShippingInfoTable from './elements/ShippingInfoTable';
 import SubmitButton from '../element/SubmitButton';
+import PaymentMethodSelector from './elements/PaymentMethodSelector';
 
-const ShippingInfo = () => {
+const PaymentOption = () => {
   return (
     <div className="mx-16 pt-2 pb-4">
-      <ShoppingCartMenu title={'اطلاعات ارسال سفارش'} />
-      <div className="bg-white flex flex-col pb-8 px-16 shadow-sm">
+      <ShoppingCartMenu title={'شیوه پرداخت'} />
+      <div className="bg-white flex flex-col pb-8 px-16 shadow-sm w-full mx-auto">
         <div className="flex items-center justify-center my-8">
           <input type="text" className="w-120 h-8 border border-gray-200" />
         </div>
-        <div className="flex flex-col pb-4">
-          <span className="text-xs font-semibold">◀ آدرس مورد نظر خود را انتخاب نمایید.</span>
-          <div className="w-[11%] py-4">
-            <BorderButton title={'ایجاد آدرس جدید'} />
-          </div>
+        <div className="flex pb-4 mx-4">
+          <span className="text-sm font-semibold">◀ روش پرداخت</span>
         </div>
         <div className='mb-8'>
-          <ShippingInfoTable />
+          <PaymentMethodSelector />
         </div>
         <div className='flex justify-between'>
           <div className='w-[16%]'>
@@ -46,6 +46,6 @@ const ShippingInfo = () => {
       </div>
     </div>
   );
-};
+}
 
-export default ShippingInfo;
+export default PaymentOption

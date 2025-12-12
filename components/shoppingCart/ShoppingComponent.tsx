@@ -1,7 +1,7 @@
 import React from 'react'
 import Products from './Products'
 import ShoppingCartMenu from './ShoppingCartMenu'
-import BillSummary from './BillSummary'
+import BillSummary from './elements/BillSummary'
 
 const ShoppingComponent = () => {
   return (
