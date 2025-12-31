@@ -26,7 +26,7 @@ export default function CustomSwiper() {
           <ChevronLeft className='swiper-button-prev-custom text-gray-300 hover:text-gray-500 h-12 w-12 cursor-pointer transition text-3xl' />
         </div>
         <div className="absolute right-2 top-1/2 -translate-y-1/2 z-20">
-          <ChevronRight className='swiper-button-prev-custom text-gray-300 hover:text-gray-500 h-12 w-12 cursor-pointer transition text-3xl' />
+          <ChevronRight className='swiper-button-next-custom text-gray-300 hover:text-gray-500 h-12 w-12 cursor-pointer transition text-3xl' />
         </div>
 
         <Swiper

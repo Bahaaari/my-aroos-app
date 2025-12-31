@@ -24,12 +24,12 @@ export default function CustomSwiper() {
         </div>
       <div className="relative max-w-5xl p-12">
         <div className="absolute left-1 top-1/2 -translate-y-1/2 z-20">
-          <ChevronLeft className='swiper-button-prev-custom text-gray-300
+          <ChevronLeft className='swiper-button-prev-visited text-gray-300
            hover:text-gray-500 text-10xl font-bold select-none
            h-12 w-12 cursor-pointer transition text-3xl' />
         </div>
         <div className="absolute right-2 top-1/2 -translate-y-1/2 z-20">
-          <ChevronRight className='swiper-button-prev-custom text-gray-300
+          <ChevronRight className='swiper-button-next-visited text-gray-300
            hover:text-gray-500 text-10xl font-bold select-none
            h-12 w-12 cursor-pointer transition text-3xl' />
         </div>
@@ -38,8 +38,8 @@ export default function CustomSwiper() {
            spaceBetween={10}
            slidesPerView={3.5}
            navigation={{
-            nextEl: ".swiper-button-next-custom",
-            prevEl: ".swiper-button-prev-custom",
+            nextEl: ".swiper-button-next-visited",
+            prevEl: ".swiper-button-prev-visited",
            }}
            
            className="rounded-lg"

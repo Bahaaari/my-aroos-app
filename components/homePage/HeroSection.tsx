@@ -1,11 +1,10 @@
 "use client";
 
-import React from 'react'
+import { useRef } from 'react'
 import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 //import { useEffect, useState } from "react";
-import type { StaticImageData } from 'next/image';
 import weddingServices from '../../public/images/homepage/hero/weddingServices.jpg';
 //import dynamic from "next/dynamic";
 
@@ -42,12 +41,12 @@ const HeroSection = () => {
   return (
     <div className="max-w-6xl mx-auto relative mb-2">
       <div className="absolute -left-10 top-1/2 -translate-y-1/2">
-        <button className="swiper-button-prev-custom bg-gray-200 hover:bg-gray-300 text-gray-800 rounded-full w-10 h-10 flex items-center justify-center shadow">
+        <button className="swiper-button-prev-hero bg-gray-200 hover:bg-gray-300 text-gray-800 rounded-full w-10 h-10 flex items-center justify-center shadow">
           <span className="text-3xl font-bold">›</span>
         </button>
       </div>
       <div className="absolute -right-10 top-1/2 -translate-y-1/2 z-20">
-        <button className="swiper-button-next-custom bg-gray-200 hover:bg-gray-300 text-gray-800 rounded-full w-10 h-10 flex items-center justify-center shadow">
+        <button className="swiper-button-next-hero bg-gray-200 hover:bg-gray-300 text-gray-800 rounded-full w-10 h-10 flex items-center justify-center shadow">
           <span className="text-3xl font-bold">‹</span>
         </button>
       </div>
@@ -60,8 +59,8 @@ const HeroSection = () => {
                  slidesPerView={1.6}
                  speed={600}
                  navigation={{
-                   nextEl: ".swiper-button-next-custom",
-                   prevEl: ".swiper-button-prev-custom",
+                   nextEl: ".swiper-button-next-hero",
+                   prevEl: ".swiper-button-prev-hero",
                  }}
                  
                  className="rounded-lg shadow-lg relative w-full"

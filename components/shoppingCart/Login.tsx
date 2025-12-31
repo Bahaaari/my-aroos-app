@@ -29,7 +29,7 @@ const Login = () => {
             </div>
             <div className="col-span-2 flex flex-col items-center justify-around">
               <Image src={add} alt="icon" className='mb-4' />
-              <span className="font-semibold text-sm mb-2">عضو عروس استور نستید؟</span>
+              <span className="font-semibold text-sm mb-2">عضو عروس استور نیستید؟</span>
               <span className='text-xs mb-4'>برای ادامه فرآیند خرید ثبت نام کنید.</span>
               <div className="w-[22%] py-4">
                 <SubmitButton title={'ثبت نام'} />
