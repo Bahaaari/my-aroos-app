@@ -4,17 +4,17 @@ import React, { useRef} from 'react'
 import {Pagination, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Image, { StaticImageData} from 'next/image';
-import salon from '../../../public/images/services/salon.jpg';
-import salon1 from '../../../public/images/services/salon1.jpg';
-import salon2 from '../../../public/images/services/salon2.jpg';
-import discountpng from '../../../public/images/services/discountpng.png'
+import salon from '../../../../public/images/services/salon.jpg';
+import salon1 from '../../../../public/images/services/salon1.jpg';
+import salon2 from '../../../../public/images/services/salon2.jpg';
+
 
 interface Card {
   id: number;
   image: StaticImageData;
 }
 
-const BeautySalon = () => {
+const GardenHall = () => {
   const swiperRef = useRef<any>(null);
 
   const cards: Card[] = [
@@ -61,23 +61,9 @@ const BeautySalon = () => {
           
         </Swiper>
      </div>
-     <div className='w-full h-[250px]'>
-      <div className='grid grid-cols-2'>
-        <div className='span-col-1 h-full flex flex-col justify-around items-start p-8'>
-          <h1 className='text-2xl font-bold mb-6'>سالن زیبایی پرنسس</h1>
-          <span className='text-xs'>انواع خدمات عروس</span>
-          <span className='text-xs'>خدمات مو</span>
-          <span className='text-xs'>خدمات ناخن</span>
-          <span className='text-xs'>ماسکهای صورت</span>
-        </div>
-        <div className='span-col-1 h-full flex flex-col justify-start items-end pt-8'>
-          <Image src={discountpng} alt='logo'
-          width={100} height={80} />
-        </div>
-      </div>
-     </div>
+     
     </div>
   )
 }
 
-export default BeautySalon
+export default GardenHall
